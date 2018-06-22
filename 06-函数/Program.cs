@@ -10,6 +10,7 @@ namespace _06_函数
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

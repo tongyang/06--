@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "方法练习", "方法练�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "out", "out\out.csproj", "{D55C0511-2AAD-4804-A91A-A96925CFB495}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ref参数", "Ref参数\Ref参数.csproj", "{14DED419-14E6-4B82-9773-629EE8A8EAC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D55C0511-2AAD-4804-A91A-A96925CFB495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D55C0511-2AAD-4804-A91A-A96925CFB495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D55C0511-2AAD-4804-A91A-A96925CFB495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14DED419-14E6-4B82-9773-629EE8A8EAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14DED419-14E6-4B82-9773-629EE8A8EAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14DED419-14E6-4B82-9773-629EE8A8EAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14DED419-14E6-4B82-9773-629EE8A8EAC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

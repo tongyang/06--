@@ -31,7 +31,22 @@ namespace _06_函数
             }
             Console.ReadKey();
             #endregion
-
+            #region 判断闰年
+            bool b = IsRun(2000);
+            Console.WriteLine(b);   
+            #endregion
         }
+        /// <summary>
+        /// 根据传入的年份判断是否为闰年
+        /// </summary>
+        /// <param name="year">需要判断的年份</param>
+        /// <returns>返回是否为闰年，true/false</returns>
+        public static bool IsRun(int year)
+        {
+            bool b = (year % 4 == 0) || (year % 400 == 0) && (year % 100 != 0);
+            return b;
+        }
+
+        
     }
 }

@@ -10,9 +10,11 @@ namespace 方法练习
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("请输入一个数字：");
-            string s = Console.ReadLine();
-            IsZS(s);
+            //Console.WriteLine("请输入一个数字：");
+            //string s = Console.ReadLine();
+            //IsZS(s);
+            int[] values = { 1, 2, 3, 4, 5, 6, 32, 2, 1 };
+            ShowSum(values);
         }
 
         public static void IsZS(string ZS)
@@ -28,5 +30,17 @@ namespace 方法练习
 
             Console.WriteLine(ZS);
         }
+
+        public static void ShowSum(int[] values)
+        {
+            int temp = 0;
+            for (int i = 0; i < values.Length; i++)
+            {
+                temp += values[i];
+            }
+
+            Console.WriteLine(temp);
+        }
+
     }
 }

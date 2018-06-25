@@ -11,14 +11,32 @@ namespace 方法综合练习
         static void Main(string[] args)
         {
             #region 第一个练习
-            Console.WriteLine("请输入两个数字，第一个：");
-            string numStr1 = Console.ReadLine();
-            Console.WriteLine("请输入第二个数字：");
-            string numStr2 = Console.ReadLine();
-            Console.WriteLine("两个数字的和为：{0}", CountSum(numStr1, numStr2));
+            //Console.WriteLine("请输入两个数字，第一个：");
+            //string numStr1 = Console.ReadLine();
+            //Console.WriteLine("请输入第二个数字：");
+            //string numStr2 = Console.ReadLine();
+            //Console.WriteLine("两个数字的和为：{0}", CountSum(numStr1, numStr2));
+            #endregion
+
+            #region 第二个练习
+            string[] strs = {"马龙", "迈克尔乔丹", "雷吉米勒", "蒂姆邓肯", "科比布莱恩特" };
+            Console.WriteLine(ShowMax(strs));
             #endregion
         }
 
+
+        public static string ShowMax(string[] strs)
+        {
+            string temp = strs[0];
+            for (int i = 0; i < strs.Length - 1; i++)
+            {
+                if (strs[i].Length < strs[i + 1].Length)
+                {
+                    temp = strs[i + 1];
+                }
+            }
+            return temp;
+        }
 
         public static int CountSum(String numStr1, String numStr2)
         {

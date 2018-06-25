@@ -85,19 +85,46 @@ namespace 方法综合练习
             #endregion
 
             #region 第十个练习
-            int[] nums = { 1, 3, 5, 7, 93, 33, };
+            //int[] nums = { 0, 0, 0, 15};
+            //Console.WriteLine(GetAvg(nums));
+            #endregion
+
+            #region 第十一个练习
+
             #endregion
         }
 
-        public static float GetAvg(int[] nums)
+        public static int GetAvg(int[] nums)
         {
             int sum = 0;
+            // 先计算数组的和
             for (int i = 0; i < nums.Length; i++)
             {
                 sum += nums[i];
             }
-            float temp = sum / nums.Length;
-            return temp;
+            float avg = (float)sum / nums.Length;
+            int avgInt = sum / nums.Length;
+            int one = (int)((avg * 1000) / 100);
+            int two = (int)((avg * 10000) / 100);
+            two = two - one * 10;
+            if (two >= 5)
+            {
+                one += 1;
+                if (one >= 5)
+                {
+                    avgInt += 1;
+                    return avgInt;
+                }
+            }
+            else
+            {
+                if (one >= 5)
+                {
+                    avgInt += 1;
+                    return avgInt;
+                }
+            }
+            return avgInt;
         }
 
         public static int[] GetAscArray(int[] array)
@@ -203,10 +230,7 @@ namespace 方法综合练习
                     {
                         return false;
                     }
-                    else
-                    {
-                        return true;
-                    }
+                    
                 }
             }
             return false;

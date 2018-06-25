@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ref参数", "Ref参数\Ref�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "方法递归", "方法递归\方法递归.csproj", "{C0C9E167-17D2-4A9C-BABF-684DAF977619}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "方法综合练习", "方法综合练习\方法综合练习.csproj", "{31584BE1-1C26-4AFC-B677-618423125987}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C0C9E167-17D2-4A9C-BABF-684DAF977619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0C9E167-17D2-4A9C-BABF-684DAF977619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0C9E167-17D2-4A9C-BABF-684DAF977619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31584BE1-1C26-4AFC-B677-618423125987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31584BE1-1C26-4AFC-B677-618423125987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31584BE1-1C26-4AFC-B677-618423125987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31584BE1-1C26-4AFC-B677-618423125987}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

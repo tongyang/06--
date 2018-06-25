@@ -53,6 +53,99 @@ namespace 方法综合练习
             //ShowLevel(score, out level);
             //Console.WriteLine("您的成绩为：{0}", level);
             #endregion
+
+            #region 第六个练习
+            //string[] s = {"中国", "美国", "巴西", "澳大利亚", "加拿大" };
+            //ReverseArray(s);
+            #endregion
+
+            #region 第七个练习
+            //double area;
+            //double girth;
+            //Console.WriteLine("请输入圆的半径：");
+            //string s = Console.ReadLine();
+            //int temp;
+            //IsNumber(s, out temp);
+            //double r = Convert.ToDouble(temp);
+            //CountSpace(r, out area, out girth);
+            //Console.WriteLine("圆的周长为 {0} 面积为 {1}", girth, area);
+            #endregion
+
+            #region 第八个练习
+            //Console.WriteLine(GetMax(1, 3, 5, 22, 12, 44, 44, 4213));
+            #endregion
+
+            #region 第九个练习
+            //int[] array = {1, 2, 33, 22, 1, 32, 53 };
+            //array = GetAscArray(array);
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    Console.WriteLine(array[i]);
+            //}
+            #endregion
+
+            #region 第十个练习
+            int[] nums = { 1, 3, 5, 7, 93, 33, };
+            #endregion
+        }
+
+        public static float GetAvg(int[] nums)
+        {
+            int sum = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                sum += nums[i];
+            }
+            float temp = sum / nums.Length;
+            return temp;
+        }
+
+        public static int[] GetAscArray(int[] array)
+        {
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                for (int j = 0; j < array.Length - 1 -i; j++)
+                {
+                    if (array[j] > array[j + 1])
+                    {
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
+                }
+            }
+            return array;
+        }
+
+        public static int GetMax(params int[] nums)
+        {
+            int max = nums[0];
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+                if (max < nums[i + 1])
+                {
+                    max = nums[i + 1];
+                }
+            }
+            return max;
+        }
+
+        public static void CountSpace(double r, out double area, out double girth)
+        {
+            area = 0;
+            girth = 0;
+            area = r * r * Math.PI;
+            girth = 2 * r * Math.PI;
+
+        }
+
+        public static void ReverseArray(string[] s)
+        {
+            Array.Reverse(s);
+            for (int i = 0; i < s.Length; i++)
+            {
+                Console.WriteLine(s[i]);
+            }
         }
 
         public static void ShowLevel(double score, out string level)

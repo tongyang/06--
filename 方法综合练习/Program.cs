@@ -90,8 +90,21 @@ namespace 方法综合练习
             #endregion
 
             #region 第十一个练习
-
+            //string[] strs = {"中国", "荷兰", "德国", "法国" };
+            //Cut(strs);
             #endregion
+        }
+
+        public static void Cut(string[] strs)
+        {
+            for (int i = 0; i < strs.Length - 1; i++)
+            {
+                strs[i] = strs[i] + "|";
+            }
+            for (int i = 0; i < strs.Length; i++)
+            {
+                Console.Write(strs[i]);
+            }
         }
 
         public static int GetAvg(int[] nums)
